@@ -1,6 +1,5 @@
 import React from "react";
 import Message from "./Message";
-import "./Messages.css";
 
 const messageData = {
   avatar:
