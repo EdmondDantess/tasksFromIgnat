@@ -1,7 +1,23 @@
-.someClass {
-
+.error input {
+    border: 1px solid red;
+    background-color: pink;
 }
 
-.error {
-    border: 1px solid red;
+
+.noError input {
+    border: 1px solid green;
+    background-color: greenyellow;
+}
+
+.error span {
+    color: red;
+    font-weight: bold;
+    padding-left: 1px;
+}
+
+
+.noError span {
+    color: green;
+    font-weight: bold;
+    padding-left: 1px;
 }
