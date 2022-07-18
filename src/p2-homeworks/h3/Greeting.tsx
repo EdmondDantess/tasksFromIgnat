@@ -13,7 +13,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
   { name, setNameCallback, addUser, error, totalUsers } // деструктуризация пропсов
 ) => {
-  const inputClass = name === "" ? s.error : s.noError; // need to fix with (?:)
+  const inputClass = name ? s.noError : s.error; // need to fix with (?:)
 
   const onKeyPressDownHandler = (e: KeyboardEvent<HTMLInputElement>) => {
     if (name === "") {
@@ -27,17 +27,20 @@ const Greeting: React.FC<GreetingPropsType> = (
   const valueHandler = name === "" ? true : false;
 
   return (
-    <div className={inputClass}>
-      <input
-        value={name}
-        onChange={setNameCallback}
-        onKeyPress={onKeyPressDownHandler}
-      />
-      <span>{error}</span>
+    <div className={s.mainDiv}>
+      <div className={inputClass}>
+        <input
+          value={name}
+          onChange={setNameCallback}
+          onKeyPress={onKeyPressDownHandler}
+        />
+        <div className={s.textError}>{error}</div>
+      </div>
+
       <button onClick={addUser} disabled={valueHandler}>
         add
       </button>
-      <span>{totalUsers}</span>
+      <div className={s.counterNum}>{totalUsers}</div>
     </div>
   );
 };

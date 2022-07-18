@@ -1,3 +1,64 @@
 .someClass {
+   
+}
 
+.someClass button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(121, 170, 170);
+    box-shadow: 1px 1px 10px green;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+
+}
+
+
+.someClass button:active {
+    background-color: gray;
+}
+
+.someClass button:hover {
+    box-shadow: 1px 1px 10px black;
+
+}
+
+.someClass button:disabled {
+    opacity: 0.4;
+    color: red;
+    box-shadow: 1px 1px 10px red;
+}
+
+.someClass button {
+    margin: 2px
+}
+
+.someClass button:focus {
+    color: gray;
+    padding: -5px;
+    opacity: 0.8;
+}
+
+.string {
+    width: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.5fr;
+
+}
+
+.Middle {
+    color: orange;
+}
+
+.Hight   {
+    color: green;
+}
+
+.Low {
+    color: red;
 }

@@ -1,23 +1,87 @@
+.mainDiv {
+    display: flex;
+    align-items: flex-start;
+}
+
+.mainDiv button {
+    margin-left: 10px;
+}
+
+.mainDiv button {
+    margin-left: 10px;
+}
+
+.mainDiv button:active {
+    background-color: gray;
+}
+
+.mainDiv button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(121, 170, 170);
+    box-shadow: 1px 1px 10px green;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    display: inline-block;
+    min-height: 28px;
+}
+
+.mainDiv button:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.mainDiv button::after {
+    padding: 10px;
+}
+
+.mainDiv button:disabled {
+    opacity: 0.4;
+    color: red;
+    box-shadow: 1px 1px 10px red;
+}
+
+.error input:focus {
+    outline: none;
+    border: gray solid 1px;
+}
+
+.noError input:focus {
+    outline: none;
+    border: gray solid 1px;
+}
+
 .error input {
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px red;
     background-color: pink;
 }
 
-
 .noError input {
-    border: 1px solid green;
+    border: 1px solid rgba(172, 255, 47, 0.5);
     background-color: greenyellow;
+    box-shadow: 1px 1px 10px green;
 }
 
-.error span {
+.error div {
     color: red;
     font-weight: bold;
     padding-left: 1px;
 }
 
-
-.noError span {
+.noError div {
     color: green;
     font-weight: bold;
     padding-left: 1px;
+}
+
+.textError {
+    height: 21px;
+}
+
+.counterNum {
+    margin-left: 10px;
 }

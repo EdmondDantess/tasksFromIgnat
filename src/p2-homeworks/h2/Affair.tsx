@@ -1,4 +1,5 @@
 import React from "react";
+import s from "./Affairs.module.css";
 
 type AffairPropsType = {
   // key не нужно типизировать
@@ -15,10 +16,22 @@ function Affair(props: AffairPropsType) {
     props.deleteAffairCallback(props.affair._id);
   }; // need to fix
 
+  let textValue = s.Hight;
+
+  if (props.affair.priority === "middle") {
+    textValue = s.Middle;
+  }
+  if (props.affair.priority === "low") {
+    textValue = s.Low;
+  }
+
   return (
-    <div>
-      {props.affair.name} {props.affair.priority}
-      <button onClick={deleteCallback}>X</button>
+    <div className={s.string}>
+      {props.affair.name}
+      <span className={textValue}>{props.affair.priority}</span>
+      <button onClick={deleteCallback} className={s.buttonList}>
+        X
+      </button>
     </div>
   );
 }

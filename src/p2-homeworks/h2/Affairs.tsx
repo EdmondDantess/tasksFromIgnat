@@ -1,5 +1,6 @@
 import React from "react";
 import Affair from "./Affair";
+import s from "./Affairs.module.css";
 import { AffairType } from "./HW2";
 
 type AffairsPropsType = {
@@ -33,8 +34,7 @@ function Affairs(props: AffairsPropsType) {
 
   return (
     <div>
-      {mappedAffairs}
-
+      <div>{mappedAffairs}</div>
       <button onClick={setAll}>All</button>
       <button onClick={setHigh}>High</button>
       <button onClick={setMiddle}>Middle</button>
