@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./Error404.css";
 
 function Error404() {
-    return (
-        <div>
-            <div>404</div>
-            <div>Page not found!</div>
-            <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
-        </div>
-    )
+  return (
+    <div className="Block404">
+      <h1>404</h1>
+      <span>Page not found!</span>
+    </div>
+  );
 }
 
-export default Error404
+export default Error404;

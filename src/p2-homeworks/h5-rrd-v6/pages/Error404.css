@@ -1,0 +1,17 @@
+.Block404 {
+       text-align: center;
+}
+
+.Block404 h1 {
+    color: white;
+    font-size: 600%;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px red;
+}
+
+.Block404 span {
+    color: white;
+    text-shadow: 1px 1px 5px red;
+    font-weight: bold;
+    font-size: 400%;
+}

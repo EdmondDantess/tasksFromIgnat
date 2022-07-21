@@ -1,0 +1,62 @@
+#menu {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;   
+  
+ }
+#menu h2 {
+    border: 1px solid greenyellow;
+    box-shadow: 1px 1px 5px greenyellow;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 5px green;
+    background-color: rgba(104, 182, 101, 0.61);
+}
+#menu:hover h2 {
+    color: pink;
+}
+
+#menu a {
+    width: 100%;
+
+      font-weight: bold;
+    color: beige;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px green;
+  }
+
+#menu li:hover {
+
+    color: pink;
+      border: 1px solid black;
+    text-shadow: 1px 1px 5px rgb(128, 26, 0);
+    background-color: rgba(104, 182, 101, 0.61);
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-right: 40px;
+    background-color: rgba(57, 68, 57, 0.116);
+}
+
+#menu #list {
+    position:absolute;
+    width: 400px;
+    margin: 0 31%;
+    justify-content: center;
+    text-align: center;  
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+  }
+  
+  #menu:hover #list {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+  }
+
+  #menu:active #list {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+  }
+ 
